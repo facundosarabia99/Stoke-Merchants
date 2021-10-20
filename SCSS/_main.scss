@@ -1,0 +1,89 @@
+$bglight: rgb(248, 248, 248);
+$bgblack: black;
+
+@mixin condicion ($color) {
+    background-color: ($color);
+    @if $color == $bgblack{
+        color: black;
+        border: white;
+    }
+    @else if $color == $bglight{
+        color: rgb(0, 0, 0);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border:solid 1px black;
+        text-align: justify;
+    }
+}
+
+main{
+    nav{
+        div{
+            p{
+                line-height: 10px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif  ; font-variant: normal; font-weight: 700;
+                text-transform: capitalize;
+                text-align: center;
+                letter-spacing: 10px;
+                word-spacing: 5px;
+            }
+            h5{
+                margin: 5%;
+                color: white;
+                font-size: 30px;
+                font-family: monospace;
+                text-decoration: underline solid 1px white;
+                text-underline-position:under solid white;
+            }
+            h6{
+                color: white;
+                &:hover{
+                    color: black;
+                }
+            }
+
+        }
+    }
+    div{
+        .row{
+            p{
+                line-height: 10px;
+                color: white;
+                font-size: 12px;
+                text-transform: capitalize;
+                font-family:Arial, Helvetica, sans-serif; font-variant: normal; font-weight: 600;
+                letter-spacing: 10px;
+                text-align: center;
+                word-spacing: 5px;
+                .black{
+                    color: black;
+                }            
+            }
+            .scale{
+                transition: 0.2s ease;
+                    &:hover{
+                    transform: scale(2,2);
+                    }
+            }
+            h5{
+                .black{
+                    color: black;
+                }
+            }
+            h2{
+                @media screen and (max-width:600px){
+                    h2 a{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .caja{
+        @include condicion($bglight);
+        padding: 15px;
+        margin: 2px;
+    }
+}

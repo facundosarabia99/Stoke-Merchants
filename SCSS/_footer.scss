@@ -1,0 +1,17 @@
+footer{
+    margin-bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    nav{
+        .redes{
+            width: 2rem;
+            display: flex
+        }
+        img{
+            width: 2.5rem;
+        }
+    }
+}

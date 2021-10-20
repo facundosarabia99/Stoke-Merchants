@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: radial-gradient(black, rgb(78, 76, 76));
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+p{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+img{
+    width: 250px;
+    border: 2px double gray;
+    opacity: .4;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+img:hover{
+    opacity: 1;
+    border: solid 2px white;
+}
+.textDecoration{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    text-decoration: underline rgb(0, 0, 0);
+    letter-spacing: 5px;
+    
+}
+.flexbox{
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: flex-end;
+}
+.menu{
+    background: rgb(0, 0, 0);
+    list-style-type: none;
+    padding: 0; /*para eliminar el espacio entre lista y lista*/
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto; /*magia que centra el menu*/
+    border: 2px white solid;
+    width: 1300px;
+    height: 50px;
+    overflow: visible;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+}
+.menu li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    
+}
+.menu li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.ollistas{
+    margin: 20px;
+    list-style-type: upper-roman;
+}
+.Contact{
+    background: rgb(0, 0, 0);
+    list-style-type: none;
+    padding: 0; /*para eliminar el espacio entre lista y lista*/
+    width: 100%;
+    max-width: 1000px;
+
+}
+.Contact li{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.Contact li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    
+}
+.Contact li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}

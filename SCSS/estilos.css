@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background-color: black;
+}
+
+main nav div p {
+  line-height: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: normal;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 10px;
+  word-spacing: 5px;
+}
+
+main nav div h5 {
+  margin: 5%;
+  color: white;
+  font-size: 30px;
+  font-family: monospace;
+  -webkit-text-decoration: underline solid 1px white;
+          text-decoration: underline solid 1px white;
+  text-underline-position: under solid white;
+}
+
+main nav div h6 {
+  color: white;
+}
+
+main nav div h6:hover {
+  color: black;
+}
+
+main div .row p {
+  line-height: 10px;
+  color: white;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: normal;
+  font-weight: 600;
+  letter-spacing: 10px;
+  text-align: center;
+  word-spacing: 5px;
+}
+
+main div .row p .black {
+  color: black;
+}
+
+main div .row .scale {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+main div .row .scale:hover {
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+}
+
+main div .row h5 .black {
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  main div .row h2 h2 a {
+    text-align: center;
+  }
+}
+
+main .caja {
+  background-color: #f8f8f8;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: solid 1px black;
+  text-align: justify;
+  padding: 15px;
+  margin: 2px;
+}
+
+footer {
+  margin-bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer nav .redes {
+  width: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer nav img {
+  width: 2.5rem;
+}
+/*# sourceMappingURL=estilos.css.map */
