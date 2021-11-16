@@ -14,36 +14,60 @@ $bgblack: black;
         text-align: justify;
     }
 }
-
-main{
-    nav{
-        div{
-            p{
-                line-height: 10px;
-                font-size: 20px;
-                font-family: Arial, Helvetica, sans-serif  ; font-variant: normal; font-weight: 700;
-                text-transform: capitalize;
-                text-align: center;
-                letter-spacing: 10px;
-                word-spacing: 5px;
-            }
-            h5{
-                margin: 5%;
-                color: white;
-                font-size: 30px;
-                font-family: monospace;
-                text-decoration: underline solid 1px white;
-                text-underline-position:under solid white;
-            }
-            h6{
-                color: white;
-                &:hover{
-                    color: black;
-                }
-            }
-
+.homee{
+    margin: 10rem;
+}
+.conta{
+    border: black solid 1px;
+    padding: 1rem;
+    margin: 7rem;
+    h1{
+        height: 5rem;
+    }
+}
+.galerias{
+    margin: 1rem;
+    margin-top: 6rem;
+    background: rgb(228, 227, 227);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    border: black solid 1px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+    section{
+        margin: black solid 1px;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        h1{
+            color: black;
+            text-align: center;
+            font-size: 50px;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-size: 20px;
+            color: black;
+            text-align: center;
         }
     }
+    img{
+        width: 250px;
+        border: 2px double rgb(255, 255, 255);
+        margin: 1rem;
+        &:hover{
+            border: solid 4px rgb(0, 0, 0);
+        }
+    }
+}
+
+main{
     div{
         .row{
             p{
@@ -79,11 +103,36 @@ main{
             }
         }
     }
-
-
     .caja{
         @include condicion($bglight);
         padding: 15px;
         margin: 2px;
     }
+    .contacto{
+        background-color: black;
+    }
 }
+
+.parrafo{
+    position: relative;
+    margin: 5;
+}
+@media (max-width: 767px) {
+    .homee{
+        margin: 2rem;
+    }
+    .row{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    p{
+        font-size: 10px;
+    }
+    .container{
+        margin: 1rem;
+        img{
+            width: 7rem;
+        }
+    }
+
+    }
